@@ -1,8 +1,90 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Login</title>
-  </head>
-  <body>
-    <!-- Write your code here -->
-  </body>
+    <style>
+        body {
+            background-color: #f6f6f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        .left {
+            width: 450px;
+            margin-top: 70px;
+            display: inline-block;
+        }
+        .left img {
+            width: 200px;
+        }
+        .left p {
+            font-size: 20px;
+            color: #333;
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        input {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        button {
+            background-color: #1877f2;
+            border-radius: 5px;
+            padding: 10px 20px;
+            width: 100%;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        a {
+            color: #1877f2;
+            text-decoration: none;
+            text-align: center;
+        }
+        .signup {
+            background-color: #42b72a;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdgS0IxquKvMSPtIH1lRTPotJWkOBLT_KQ5g&s" alt="Facebook logo">
+            <p><strong>Facebook helps you connect and share with the people in your life.</strong></p>
+        </div>
+        <div class="right">
+            <form>
+                <input type="text" id="email" placeholder="Email address or phone number">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit">Log in</button>
+                <a href="#">Forgotten account?</a>
+            </form>
+            <button class="signup">Create new account</button>
+        </div>
+    </div>
+</body>
 </html>
